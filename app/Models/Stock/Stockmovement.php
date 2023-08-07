@@ -15,5 +15,7 @@ class Stockmovement extends Model
         'qty',
         'created_by',
         'updated_by',
+        'unit_value',
+        'stock_value_total',
     ];
 }

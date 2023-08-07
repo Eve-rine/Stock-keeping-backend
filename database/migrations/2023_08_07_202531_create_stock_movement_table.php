@@ -18,6 +18,8 @@ class CreateStockMovementTable extends Migration
             $table->unsignedBigInteger('product_id');
             $table->string('transaction_type');
             $table->integer('qty');
+            $table->decimal('unit_value', 10, 2);
+            $table->decimal('stock_value_total', 10, 2);
             $table->integer('created_by')->nullable();
             $table->integer('updated_by')->nullable();
             $table->timestamps();

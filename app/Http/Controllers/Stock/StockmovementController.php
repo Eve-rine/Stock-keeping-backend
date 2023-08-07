@@ -52,6 +52,8 @@ class StockmovementController extends Controller
                         'product_id' => $request->product_id,
                         'qty' => $request->quantity,
                         'transaction_type' => $request->transaction_type,
+                        'unit_value' => $request->unit_value,
+                        'stock_value_total' => $request->stock_value_total,
                         'created_by' => $request->user_id?? 1,
                         'updated_by' => $request->user_id?? null
                     ]);
